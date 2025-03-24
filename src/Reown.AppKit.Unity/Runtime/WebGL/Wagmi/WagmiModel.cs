@@ -8,13 +8,13 @@ namespace Reown.AppKit.Unity.WebGl.Wagmi
     {
         public string address;
     }
-    
+
     [Serializable]
     public class GetBalanceReturnType
     {
         public string value;
     }
-    
+
     [Serializable]
     public class SignMessageParameter
     {
@@ -103,7 +103,7 @@ namespace Reown.AppKit.Unity.WebGl.Wagmi
         public string functionName;
         public object[] args;
     }
-    
+
     [Serializable]
     public class WriteContractParameter
     {
@@ -130,8 +130,9 @@ namespace Reown.AppKit.Unity.WebGl.Wagmi
     {
         public string name;
         public string type;
+        public AbiParam[] components;
     }
-    
+
     [Serializable]
     public class EstimateGasParameter
     {
